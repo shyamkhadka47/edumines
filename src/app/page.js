@@ -1,7 +1,5 @@
 import Navbar from "@/components/Navbar";
-import Jsukai from "@/components/jsukai";
 import Image from "next/image";
-import { BiSolidHomeCircle } from "react-icons/bi";
 import Button from '@/components/Button';
 import DescriptionCard from '@/components/DescriptionCard';
 import { AiFillBank, AiOutlineArrowRight } from 'react-icons/ai';
