@@ -17,7 +17,7 @@ const DescriptionCard = ({
       cardVarient = 'hover:bg-green-900 p-4 hover:text-white';
       break;
     case 'secondary':
-      cardVarient = '!text-white p-4 [&>*]:text-white';
+      cardVarient = '!text-black p-4 [&>*]:text-black';
       break;
 
     default:
