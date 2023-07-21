@@ -15,7 +15,7 @@ const menu = [
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <>
+    <div >
       <div className="flex items-center justify-between lg:max-w-[1280px] lg:mx-auto mt-[10px] mx-[5%]">
         <div>
           <h1 className="text-green-600 font-bold">EduMines</h1>
@@ -36,7 +36,7 @@ const Navbar = () => {
           </div>
           <div className=" hidden lg:block">
             <p className="text-green-600 font-bold">Call Us</p>
-            <p>+2 392 3929 210</p>
+            <p className="text-white">+2 392 3929 210</p>
           </div>
         </div>
 
@@ -106,7 +106,7 @@ const Navbar = () => {
 
         
       </div>
-    </>
+    </div>
   );
 };
 
