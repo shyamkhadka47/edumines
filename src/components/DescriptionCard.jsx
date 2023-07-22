@@ -10,6 +10,7 @@ const DescriptionCard = ({
   description,
   others,
   varient = 'primary' | 'secondary',
+
 }) => {
   let cardVarient = '';
   switch (varient) {

@@ -16,7 +16,7 @@ const TestimonialCard = ({
     <div
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
-      className={`px-8 py-10 w-96 rounded-sm bg-green-300 grid gap-4 ${
+      className={`px-8 py-10 w-full md:max-w-[350px] rounded-sm bg-green-300 grid gap-4 ${
         isHovered ? 'text-white' : 'text-black'
       }`}
     >

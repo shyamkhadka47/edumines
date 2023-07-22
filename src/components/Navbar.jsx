@@ -15,8 +15,8 @@ const menu = [
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div >
-      <div className="flex items-center justify-between lg:max-w-[1280px] lg:mx-auto mt-[10px] mx-[5%]">
+    <div className="w-full z-50 mx-auto">
+      <div className="flex items-center  justify-between lg:max-w-[1280px] lg:mx-auto mt-[10px] mx-[5%]">
         <div>
           <h1 className="text-green-600 font-bold">EduMines</h1>
           <p>Abroad Education Consultancy</p>
@@ -36,7 +36,7 @@ const Navbar = () => {
           </div>
           <div className=" hidden lg:block">
             <p className="text-green-600 font-bold">Call Us</p>
-            <p className="text-white">+2 392 3929 210</p>
+            <p className="text-black">+2 392 3929 210</p>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
           </span>
         </div>
       </div>
-      <div className="flex items-center justify-between w-[100%] h-[80px] bg-[#13263c] mt-[5px]">
+      <div className="flex items-center  justify-between w-[100%] h-[80px] bg-[#13263c] mt-[5px]">
         <div>
           <h1 className="text-green-400 ml-[60px] text-[35px] font-bold ">
             Logo
@@ -91,20 +91,20 @@ const Navbar = () => {
             onClick={() => setToggle(false)}
           />
         )}
-        {toggle? <ul className="flex flex-col items-center text-white capitalize absolute bg-[#13263c]  w-[100%] mt-[250px] lg:hidden ">
-          {menu.map((el, i) => {
-            return (
-              <li
-                key={i}
-                className="  text-[20px] cursor-pointer hover:scale-105 transition-all  hover:text-green-700 hover:font-semibold mb-[20px]  "
-              >
-                <Link href={el.path}> {el.name}</Link>
-              </li>
-            );
-          })}
-        </ul> :null}
-
-        
+        {toggle ? (
+          <ul className="flex flex-col items-center text-white capitalize absolute bg-[#13263c]  w-[100%] mt-[250px] lg:hidden ">
+            {menu.map((el, i) => {
+              return (
+                <li
+                  key={i}
+                  className="  text-[20px] cursor-pointer hover:scale-105 transition-all  hover:text-green-700 hover:font-semibold mb-[20px]  "
+                >
+                  <Link href={el.path}> {el.name}</Link>
+                </li>
+              );
+            })}
+          </ul>
+        ) : null}
       </div>
     </div>
   );
