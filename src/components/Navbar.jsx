@@ -1,16 +1,17 @@
-"use client";
-import React, { useState } from "react";
-import { BsFacebook, BsTwitter, BsInstagram, BsClock } from "react-icons/bs";
-import { BiPhoneCall } from "react-icons/bi";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { IoClose } from "react-icons/io5";
-import Link from "next/link";
+'use client';
+import React, { useState } from 'react';
+import { BsFacebook, BsTwitter, BsInstagram, BsClock } from 'react-icons/bs';
+import { BiPhoneCall } from 'react-icons/bi';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { IoClose } from 'react-icons/io5';
+import Link from 'next/link';
 
 const menu = [
-  { name: "home", path: "/" },
-  { name: "service", path: "/service" },
-  { name: "our course", path: "/our-course" },
-  { name: "about", path: "/about-us" },
+  { name: 'home', path: '/' },
+  { name: 'services', path: '/services' },
+  { name: 'our course', path: '/our-course' },
+  { name: 'about Us', path: '/about-us' },
+  { name: 'contact Us', path: '/contact-us' },
 ];
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -69,7 +70,7 @@ const Navbar = () => {
             return (
               <li
                 key={i}
-                className="ml-[25px]  text-[20px] cursor-pointer hover:scale-105 transition-all  hover:text-green-700 font-semibold hidden lg:block"
+                className="ml-[25px]  text-[20px] cursor-pointer transition-all  hover:text-green-700 font-semibold hidden lg:block"
               >
                 <Link href={el.path}> {el.name}</Link>
               </li>

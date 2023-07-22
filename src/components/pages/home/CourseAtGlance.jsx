@@ -1,5 +1,5 @@
-import React from "react";
-import IconCard from "./IconCard";
+import React from 'react';
+import IconCard from '../../IconCard';
 
 const CourseAtGlance = () => {
   return (
@@ -16,7 +16,6 @@ const CourseAtGlance = () => {
           <IconCard />
           <IconCard />
           <IconCard />
-          
         </div>
       </div>
     </>
