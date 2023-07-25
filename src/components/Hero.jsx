@@ -10,7 +10,7 @@ const Hero = ({ heading, subheading, description, btn1Name, btn2Name }) => {
         <p className="max-w-[600px] leading-9 mt-[20px]">{description}</p>
         <div className="flex items-center gap-2 mt-[30px] mb-[60px]">
           <Button name={btn1Name} />
-          <Button varient={'secondary'} name={btn2Name} />
+          <Button kind={'secondary'} name={btn2Name} />
         </div>
       </div>
     </div>

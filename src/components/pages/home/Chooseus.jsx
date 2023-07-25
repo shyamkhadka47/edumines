@@ -15,6 +15,7 @@ const Chooseus = () => {
             height={750}
             width={750}
             className=" "
+            draggable={false}
           />
         </div>
         <div className="w-[750px] grid gap-4">

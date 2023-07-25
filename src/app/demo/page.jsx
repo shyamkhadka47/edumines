@@ -1,5 +1,6 @@
-import Footer from '@/components/Footer';
+import BackgroundCard from '@/components/BackGroundCard';
 import IconCard from '@/components/IconCard';
+import ProgressBar from '@/components/ProgressBar';
 import TestimonialCard from '@/components/TestimonialCard';
 import React from 'react';
 import { AiFillInteraction } from 'react-icons/ai';
@@ -8,6 +9,12 @@ const page = () => {
   return (
     <>
       <div className=" grid p-4 gap-4">
+        <ProgressBar title="Hello" percentage="40" />
+        <BackgroundCard
+          title="hello there"
+          image={'/color-pencil.jpeg'}
+          links={[]}
+        />
         <IconCard
           icon={<AiFillInteraction size={80} />}
           iconSize="80"
@@ -26,7 +33,6 @@ const page = () => {
           description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
         />
       </div>
-      <Footer />
     </>
   );
 };
