@@ -1,17 +1,18 @@
-'use client';
-import React, { useState } from 'react';
-import { BsFacebook, BsTwitter, BsInstagram, BsClock } from 'react-icons/bs';
-import { BiPhoneCall } from 'react-icons/bi';
-import { RxHamburgerMenu } from 'react-icons/rx';
-import { IoClose } from 'react-icons/io5';
-import Link from 'next/link';
+"use client";
+import React, { useState } from "react";
+import { BsFacebook, BsTwitter, BsInstagram, BsClock } from "react-icons/bs";
+import { BiPhoneCall } from "react-icons/bi";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
+import Link from "next/link";
+import Image from "next/image";
 
 const menu = [
-  { name: 'home', path: '/' },
-  { name: 'services', path: '/services' },
-  { name: 'our course', path: '/our-courses' },
-  { name: 'about Us', path: '/about-us' },
-  { name: 'contact Us', path: '/contact-us' },
+  { name: "home", path: "/" },
+  { name: "services", path: "/services" },
+  { name: "our course", path: "/our-courses" },
+  { name: "about Us", path: "/about-us" },
+  { name: "contact Us", path: "/contact-us" },
 ];
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
     <div className="w-full z-50 mx-auto">
       <div className="flex items-center  justify-between lg:max-w-[1280px] lg:mx-auto mt-[10px] mx-[5%]">
         <div>
-          <h1 className="text-green-600 font-bold">EduMines</h1>
+          <h1 className=" text-primary-main font-bold">EduMines</h1>
           <p>Abroad Education Consultancy</p>
         </div>
         <div className="flex items-center ">
@@ -28,7 +29,7 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:block">
             <p>Monday-Friday</p>
-            <p className="text-green-600 font-bold">8:00AM-8:00PM</p>
+            <p className=" text-primary-main font-bold">8:00AM-8:00PM</p>
           </div>
         </div>
         <div className="flex items-center">
@@ -36,34 +37,33 @@ const Navbar = () => {
             <BiPhoneCall fontSize={40} />
           </div>
           <div className=" hidden lg:block">
-            <p className="text-green-600 font-bold">Call Us</p>
+            <p className=" text-primary-main font-bold">Call Us</p>
             <p className="text-black">+2 392 3929 210</p>
           </div>
         </div>
 
         <div className="flex items-center  ">
           <span>
-            <BsFacebook
-              color="green"
-              className="w-[30px] h-[30px] ml-[15px] "
-            />
+            <BsFacebook className="w-[30px] h-[30px] ml-[15px] text-primary-main  " />
           </span>
           <span>
-            <BsTwitter color="green" className="w-[30px] h-[30px] ml-[15px]" />
+            <BsTwitter className="w-[30px] h-[30px] ml-[15px] text-primary-main" />
           </span>
           <span>
-            <BsInstagram
-              color="green"
-              className="w-[30px] h-[30px] ml-[15px]"
-            />
+            <BsInstagram className="w-[30px] h-[30px] ml-[15px] text-primary-main" />
           </span>
         </div>
       </div>
-      <div className="flex items-center  justify-between w-[100%] h-[80px] bg-[#13263c] mt-[5px]">
+      <div className="flex items-center  justify-between w-[100%] h-[80px] bg-primary-500 mt-[5px]">
         <div>
-          <h1 className="text-green-400 ml-[60px] text-[35px] font-bold ">
-            Logo
-          </h1>
+          <Image
+            src="/home/logo.png"
+            width={80}
+            height={80}
+            alt="Logo"
+            className="ml-[60px] text-[35px] "
+            
+          />
         </div>
         <ul className="flex items-center text-white capitalize mr-[60px]  ">
           {menu.map((el, i) => {
@@ -100,7 +100,15 @@ const Navbar = () => {
                   key={i}
                   className="  text-[20px] cursor-pointer hover:scale-105 transition-all  hover:text-green-700 hover:font-semibold mb-[20px]  "
                 >
-                  <Link href={el.path} onClick={()=>{ setToggle(false)}}> {el.name}</Link>
+                  <Link
+                    href={el.path}
+                    onClick={() => {
+                      setToggle(false);
+                    }}
+                  >
+                    {" "}
+                    {el.name}
+                  </Link>
                 </li>
               );
             })}
