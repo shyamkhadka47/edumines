@@ -50,7 +50,7 @@ const ServicesPage = () => {
          {servicesdata.map((el, index) => {
           return (
             <OurServicesCards
-            tcolor={"bg-[#4a97ba]"}
+            tcolor={"bg-primary-main"}
               key={index}
               heading={el.heading}
               content={el.content}

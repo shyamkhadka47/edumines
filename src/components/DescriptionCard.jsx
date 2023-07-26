@@ -10,6 +10,7 @@ const DescriptionCard = ({
   description,
   others,
   varient = 'primary' | 'secondary',
+  className
 
 }) => {
   let cardVarient = '';
@@ -22,7 +23,7 @@ const DescriptionCard = ({
       break;
 
     default:
-      cardVarient = 'hover:bg-green-900 p-4 hover:text-white';
+      cardVarient = 'hover:bg-primary-main p-4 hover:text-white';
 
       break;
   }

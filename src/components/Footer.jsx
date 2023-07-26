@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="flex flex-col text-white">
       <div className="w-full relative h-44 object-cover">
         <Image
-          src={"/footer-top.png"}
+          src={"/footer-top.svg"}
           alt="footer image"
           fill
           draggable={false}

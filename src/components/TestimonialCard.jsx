@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import React, { useState } from 'react';
+import Image from "next/image";
+import React, { useState } from "react";
 
 const TestimonialCard = ({
   name,
@@ -16,8 +16,8 @@ const TestimonialCard = ({
     <div
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
-      className={`px-8 py-10 w-full md:max-w-[350px] rounded-sm bg-green-300 grid gap-4 ${
-        isHovered ? 'text-white' : 'text-black'
+      className={`px-8 py-10 w-full md:max-w-[350px] rounded-sm bg-primary-main grid gap-4 ${
+        isHovered ? "text-white" : "text-black"
       }`}
     >
       <div className={`div flex gap-4`}>
@@ -34,7 +34,7 @@ const TestimonialCard = ({
             <div
               className={`absolute ml-[55px] mt-[50px] z-[1] flex items-center justify-center overflow-hidden rounded-full h-[20px] w-[20px]`}
             >
-              {typeof subIcon === 'string' ? (
+              {typeof subIcon === "string" ? (
                 <Image src={subIcon} alt={name} fill draggable={false} />
               ) : (
                 subIcon

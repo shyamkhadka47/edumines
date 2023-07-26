@@ -6,7 +6,7 @@ import Button from './Button';
 const AboutUsRightToLeftCard = () => {
   return (
     <div>
-      <div className="max-w-[1280px] flex flex-col lg:flex-row items-center justify-between gap-8 mx-auto mt-[100px] mb-[100px]">
+      <div className="max-w-[1280px] flex flex-col lg:flex-row items-center justify-between px-12 gap-8 mx-auto mt-[100px] mb-[100px]">
         <div className="max-w-[50%] ">
           <h1 className="text-4xl font-bold">Scholarships</h1>
           <p className="mt-[25px]">

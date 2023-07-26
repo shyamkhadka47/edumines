@@ -9,7 +9,7 @@ const AboutUsLeftToRightCard = () => {
       <h1 className="text-8xl font-bold capitalize text-center my-[50px]">
         About Us
       </h1>
-      <div className="max-w-[1280px] flex flex-col lg:flex-row items-center justify-between gap-8 mx-auto mt-[100px] mb-[100px]">
+      <div className="max-w-[1280px] flex flex-col lg:flex-row items-center justify-between gap-8 mx-auto mt-[100px] mb-[100px] px-12">
         <div>
           <Image
             src={'/home/teaching.svg'}

@@ -43,7 +43,7 @@ const Chooseus = () => {
           />
         </div>
       </div>
-      <div className="w-full bg-blue-400 mx-auto">
+      <div className="w-full bg-primary-main mx-auto">
         <div className="max-w-[1000px] ml-[27%] mb-2 md:mx-auto md:flex items-center justify-between py-6">
           <div>
             <DescriptionCard
@@ -51,6 +51,7 @@ const Chooseus = () => {
               varient={"secondary"}
               title={<CountUp start={0} end={3000} duration={2.75} />}
               description={"SUCCESS STORIES"}
+              
             />
           </div>
           <div>

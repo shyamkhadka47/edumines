@@ -16,7 +16,7 @@ const IconCard = ({
     <div
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
-      className="justify-center rounded-lg w-full text-center sm:w-fit bg-white shadow-lg flex flex-col hover:bg-green-900 gap-2 items-center p-6 h-fit"
+      className="justify-center rounded-lg w-full text-center sm:w-fit bg-white shadow-lg flex flex-col hover:bg-primary-main gap-2 items-center p-6 h-fit"
       {...others}
     >
       {icon && (
@@ -45,7 +45,7 @@ const IconCard = ({
       >
         {title}
       </h1>
-      <p className="flex whitespace-nowrap text-green-500 bg-green-100 rounded-lg px-2 py-1">
+      <p className="flex whitespace-nowrap text-white bg-secondary-main rounded-lg px-2 py-1">
         {subTitle}
       </p>
     </div>

@@ -15,14 +15,14 @@ const OurCoursesPage = () => {
         btn1Name="Get Started Now!"
         btn2Name="View Course"
         bgImage="bg-image2"
-        textColor="text-white"
+        textColor="text-black"
       />
       <h1 className='text-[30px] font-semibold text-center py-[5%] underline capitalize '>we offer the best course in the industry</h1>
       <div className="  flex flex-col md:flex-row items-center justify-center max-w-[1280px]  gap-6 mx-auto mt-[30px] mb-[20px] flex-wrap ">
          {servicesdata.map((el, index) => {
           return (
             <OurServicesCards
-              tcolor={"bg-[#008000]"}
+              tcolor={"bg-primary-main"}
               key={index}
               heading={el.heading}
               content={el.content}
