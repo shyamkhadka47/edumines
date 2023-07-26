@@ -9,7 +9,7 @@ import Link from 'next/link';
 const menu = [
   { name: 'home', path: '/' },
   { name: 'services', path: '/services' },
-  { name: 'our course', path: '/our-course' },
+  { name: 'our course', path: '/our-courses' },
   { name: 'about Us', path: '/about-us' },
   { name: 'contact Us', path: '/contact-us' },
 ];
@@ -93,14 +93,14 @@ const Navbar = () => {
           />
         )}
         {toggle ? (
-          <ul className="flex flex-col items-center text-white capitalize absolute bg-[#13263c]  w-[100%] mt-[250px] lg:hidden ">
+          <ul className="flex flex-col items-center text-white capitalize absolute bg-[#13263c] w-[100%] mt-[300px] lg:hidden ">
             {menu.map((el, i) => {
               return (
                 <li
                   key={i}
                   className="  text-[20px] cursor-pointer hover:scale-105 transition-all  hover:text-green-700 hover:font-semibold mb-[20px]  "
                 >
-                  <Link href={el.path}> {el.name}</Link>
+                  <Link href={el.path} onClick={()=>{ setToggle(false)}}> {el.name}</Link>
                 </li>
               );
             })}

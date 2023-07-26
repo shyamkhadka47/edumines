@@ -1,5 +1,5 @@
-import React from 'react';
-import IconCard from '../../IconCard';
+import React from "react";
+import IconCard from "./IconCard";
 
 const CourseAtGlance = () => {
   return (

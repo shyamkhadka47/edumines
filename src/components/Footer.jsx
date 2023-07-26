@@ -1,21 +1,21 @@
-import Image from 'next/image';
-import React from 'react';
-import { BiPhone } from 'react-icons/bi';
-import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
-import { IoLocation, IoMail } from 'react-icons/io5';
+import Image from "next/image";
+import React from "react";
+import { BiPhone } from "react-icons/bi";
+import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { IoLocation, IoMail } from "react-icons/io5";
 
 const Footer = () => {
   return (
     <div className="flex flex-col text-white">
       <div className="w-full relative h-44 object-cover">
         <Image
-          src={'/footer-top.png'}
+          src={"/footer-top.png"}
           alt="footer image"
           fill
           draggable={false}
         />
       </div>
-      <div className="flex gap-14 justify-between bg-cyan-950 md:flex-row flex-col py-16 px-24 ">
+      <div className="flex gap-14 justify-between bg-[#13263c] md:flex-row flex-col py-16 px-24 ">
         <div className="flex flex-col items-center md:items-start gap-2 w-full md:w-1/4">
           <span className="font-bold uppercase text-lg">Education Mines</span>
           <p className="text-justify">
@@ -65,12 +65,10 @@ const Footer = () => {
             <BsFacebook size={40} />
             <BsInstagram size={40} />
             <BsLinkedin size={40} />
-            <BsLinkedin size={40} />
-            <BsLinkedin size={40} />
           </div>
         </div>
       </div>
-      <div className="flex items-center bg-cyan-950 gap-4 pb-20 justify-center">
+      <div className="flex items-center bg-[#13263c] gap-4 pb-20 justify-center">
         <span className="h-[2px]  bg-white w-1/3"></span>
         <span className=" text-center">{`© Education Mines ${new Date().getFullYear()} All Rights Reserved ©`}</span>
         <span className="h-[2px] bg-white w-1/3"></span>

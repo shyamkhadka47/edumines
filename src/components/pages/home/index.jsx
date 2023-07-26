@@ -1,8 +1,8 @@
-import React from 'react';
-import Hero from '@/components/Hero';
-import Chooseus from '@/components/pages/home/Chooseus';
-import CourseAtGlance from '@/components/pages/home/CourseAtGlance';
-import Testimonial from '@/components/pages/home/Testimonial';
+import React from "react";
+import Hero from "@/components/Hero";
+import Chooseus from "@/components/Chooseus";
+import CourseAtGlance from "@/components/CourseAtGlance";
+import Testimonial from "@/components/Testimonial";
 
 const HomePage = () => {
   return (
@@ -14,6 +14,8 @@ const HomePage = () => {
        Vokalia and Consonantia, there live the blind texts."
         btn1Name="Get Started Now!"
         btn2Name="View Course"
+        bgImage="bg-image"
+        textColor="text-black"
       />
       <Chooseus />
       <CourseAtGlance />
