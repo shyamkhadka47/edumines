@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -13,29 +13,29 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         image: 'url("/home/bg_1.jpg")',
         image1: 'url("/home/services.jpg")',
-        image2:'url("/home/coursesbanner.jpg")',
-        image3:'url("/home/aboutus.jpg")',
+        image2: 'url("/home/coursesbanner.jpg")',
+        image3: 'url("/home/aboutus.jpg")',
       },
 
-      boxShadow:{
-        primary:"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+      boxShadow: {
+        primary: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
       },
       colors: {
         primary: {
-          main: '#00AB55',
-          100: '#C8FACD',
-          200: '#5BE584',
-          300: '#00AB55',
-          400: '#007B55',
-          500: '#005249',
+          main: '#5119B7',
+          100: '#EFD6FF',
+          200: '#C684FF',
+          300: '#8E33FF',
+          400: '#5119B7',
+          500: '#27097A',
         },
         secondary: {
-          main: '#3366FF',
-          100: '#D6E4FF',
-          200: '#84A9FF',
-          300: '#3366FF',
-          400: '#1939B7',
-          500: '#091A7A',
+          main: '#007867',
+          100: '#C8FAD6',
+          200: '#5BE49B',
+          300: '#00A76F',
+          400: '#007867',
+          500: '#004B50',
         },
         info: {
           main: '#00B8D9',
@@ -46,7 +46,7 @@ module.exports = {
           500: '#003768',
         },
         success: {
-          main: '#36B37E',
+          main: '#1B806A',
           100: '#D8FBDE',
           200: '#86E8AB',
           300: '#36B37E',
@@ -62,7 +62,7 @@ module.exports = {
           500: '#7A4100',
         },
         error: {
-          main: '#FF5630',
+          main: '#B71D18',
           100: '#FFE9D5',
           200: '#FFAC82',
           300: '#FF5630',

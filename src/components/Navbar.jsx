@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className="w-full z-50 mx-auto">
       <div className="flex items-center  justify-between lg:max-w-[1280px] lg:mx-auto mt-[10px] mx-[5%]">
         <div>
-          <h1 className="text-green-600 font-bold">EduMines</h1>
+          <h1 className="text-primary-main font-bold">EduMines</h1>
           <p>Abroad Education Consultancy</p>
         </div>
         <div className="flex items-center ">
@@ -100,7 +100,14 @@ const Navbar = () => {
                   key={i}
                   className="  text-[20px] cursor-pointer hover:scale-105 transition-all  hover:text-green-700 hover:font-semibold mb-[20px]  "
                 >
-                  <Link href={el.path} onClick={()=>{ setToggle(false)}}> {el.name}</Link>
+                  <Link
+                    href={el.path}
+                    onClick={() => {
+                      setToggle(false);
+                    }}
+                  >
+                    {el.name}
+                  </Link>
                 </li>
               );
             })}
