@@ -1,5 +1,5 @@
-import React from "react";
-import Button from "./Button";
+import React from 'react';
+import Button from './Button';
 
 const Hero = ({
   heading,
@@ -22,10 +22,12 @@ const Hero = ({
           <h2 className={`text-[40px]  ${textColor} font-bold`}>
             {subheading}
           </h2>
-          <p className={`max-w-[600px] ${textColor} leading-9 mt-[20px]`}>{description}</p>
+          <p className={`max-w-[600px] ${textColor} leading-9 mt-[20px]`}>
+            {description}
+          </p>
           <div className="flex items-center gap-2 mt-[30px] mb-[60px]">
             <Button name={btn1Name} />
-            <Button varient={"secondary"} name={btn2Name} />
+            <Button kind={'secondary'} name={btn2Name} />
           </div>
         </div>
       </div>

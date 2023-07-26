@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import Button from "./Button";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import Button from './Button';
 
 const AboutUsRightToLeftCard = () => {
   return (
@@ -20,13 +20,13 @@ const AboutUsRightToLeftCard = () => {
             Abroad Institute has successfully guided many students to succeed
             and secured millions of dollars worth of scholarships.
           </p>
-          <Link href={"/"}>
-            <Button varient={"primary"} name={"Learn More"} />
+          <Link href={'/'}>
+            <Button kind={'primary'} name={'Learn More'} />
           </Link>
         </div>
         <div>
           <Image
-            src={"/home/teaching.svg"}
+            src={'/home/teaching.svg'}
             width={500}
             height={500}
             alt="Teaching teaching Student"

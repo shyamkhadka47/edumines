@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         image: 'url("/home/bg_1.jpg")',
         image1: 'url("/home/services.jpg")',
         image2:'url("/home/coursesbanner.jpg")',
@@ -19,7 +19,81 @@ module.exports = {
 
       boxShadow:{
         primary:"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
-      }
+      },
+      colors: {
+        primary: {
+          main: '#00AB55',
+          100: '#C8FACD',
+          200: '#5BE584',
+          300: '#00AB55',
+          400: '#007B55',
+          500: '#005249',
+        },
+        secondary: {
+          main: '#3366FF',
+          100: '#D6E4FF',
+          200: '#84A9FF',
+          300: '#3366FF',
+          400: '#1939B7',
+          500: '#091A7A',
+        },
+        info: {
+          main: '#00B8D9',
+          100: '#CAFDF5',
+          200: '#61F3F3',
+          300: '#00B8D9',
+          400: '#006C9C',
+          500: '#003768',
+        },
+        success: {
+          main: '#36B37E',
+          100: '#D8FBDE',
+          200: '#86E8AB',
+          300: '#36B37E',
+          400: '#1B806A',
+          500: '#0A5554',
+        },
+        warning: {
+          main: '#FFAB00',
+          100: '#FFF5CC',
+          200: '#FFD666',
+          300: '#FFAB00',
+          400: '#B76E00',
+          500: '#7A4100',
+        },
+        error: {
+          main: '#FF5630',
+          100: '#FFE9D5',
+          200: '#FFAC82',
+          300: '#FF5630',
+          400: '#B71D18',
+          500: '#7A0916',
+        },
+        grey: {
+          main: '#637381',
+          100: '#f9fafb',
+          200: '#f4f6f8',
+          300: '#dfe3e8',
+          400: '#c4cdd5',
+          500: '#919eab',
+          600: '#637381',
+          700: '#454f5b',
+          800: '#212b36',
+          900: '#161c24',
+        },
+        dark: {
+          main: '#161c24',
+          100: '#f9fafb',
+          200: '#f4f6f8',
+          300: '#dfe3e8',
+          400: '#c4cdd5',
+          500: '#919eab',
+          600: '#637381',
+          700: '#454f5b',
+          800: '#212b36',
+          900: '#161c24',
+        },
+      },
     },
   },
   plugins: [],
