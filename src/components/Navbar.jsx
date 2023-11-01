@@ -56,14 +56,16 @@ const Navbar = () => {
       </div>
       <div className="flex items-center  justify-between w-[100%] h-[80px] bg-primary-500 mt-[5px]">
         <div>
+          <Link href={"/"}>
           <Image
             src="/home/logo.png"
-            width={80}
-            height={80}
+            width={180}
+            height={180}
             alt="Logo"
-            className="ml-[60px] text-[35px] "
+            className="ml-[60px] text-[35px] font-bold "
             
           />
+          </Link>
         </div>
         <ul className="flex items-center text-white capitalize mr-[60px]  ">
           {menu.map((el, i) => {
@@ -93,7 +95,7 @@ const Navbar = () => {
           />
         )}
         {toggle ? (
-          <ul className="flex flex-col items-center text-white capitalize absolute bg-[#13263c] w-[100%] mt-[300px] lg:hidden ">
+          <ul className="flex flex-col items-center text-white capitalize absolute bg-primary-main w-[100%] mt-[330px] lg:hidden ">
             {menu.map((el, i) => {
               return (
                 <li
