@@ -95,11 +95,11 @@ const Navbar = () => {
         )}
 
         <ul
-          className={`flex flex-col items-center z-[999] text-white capitalize absolute  bg-[#13263c] h-[100vh] ${
+          className={`flex flex-col items-center justify-center z-[999] text-white capitalize absolute top-0 bg-[#13263c] h-[100%] ${
             toggle
               ? "w-[60%] left-0 transition-all ease-out duration-200 "
               : "w-0 transition-all ease-out duration-200 left-[-100px]  "
-          }  mt-[1095px] lg:hidden `}
+          } lg:hidden `}
         >
           {menu.map((el, i) => {
             return (
