@@ -95,7 +95,7 @@ const Navbar = () => {
           />
         )}
         {toggle ? (
-          <ul className="flex flex-col items-center z-[999] text-white capitalize absolute bg-[#13263c] h-[100vh] w-[100%] mt-[895px] lg:hidden ">
+          <ul className="flex flex-col items-center z-[999] text-white capitalize absolute bg-[#13263c] h-[100vh] w-[100%] mt-[1095px] lg:hidden ">
             {menu.map((el, i) => {
               return (
                 <li
