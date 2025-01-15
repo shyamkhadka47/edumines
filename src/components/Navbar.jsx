@@ -57,14 +57,13 @@ const Navbar = () => {
       <div className="flex items-center  justify-between w-[100%] h-[80px] bg-[#13263c] mt-[5px]">
         <div>
           <Link href={"/"}>
-          <Image
-            src="/home/logo.png"
-            width={180}
-            height={180}
-            alt="Logo"
-            className="ml-[60px] text-[35px] font-bold "
-            
-          />
+            <Image
+              src="/home/logo.png"
+              width={180}
+              height={180}
+              alt="Logo"
+              className="ml-[60px] text-[35px] font-bold "
+            />
           </Link>
         </div>
         <ul className="flex items-center text-white capitalize mr-[60px]  ">
@@ -94,28 +93,33 @@ const Navbar = () => {
             onClick={() => setToggle(false)}
           />
         )}
-        {toggle ? (
-          <ul className="flex flex-col items-center z-[999] text-white capitalize absolute bg-[#13263c] h-[100vh] w-[100%] mt-[1095px] lg:hidden ">
-            {menu.map((el, i) => {
-              return (
-                <li
-                  key={i}
-                  className="  text-[20px] cursor-pointer hover:scale-105 transition-all  hover:text-green-700 hover:font-semibold my-[20px]  "
+
+        <ul
+          className={`flex flex-col items-center z-[999] text-white capitalize absolute  bg-[#13263c] h-[100vh] ${
+            toggle
+              ? "w-[60%] left-0 transition-all ease-out duration-200 "
+              : "w-0 transition-all ease-out duration-200 left-[-100px]  "
+          }  mt-[1095px] lg:hidden `}
+        >
+          {menu.map((el, i) => {
+            return (
+              <li
+                key={i}
+                className="  text-[20px] cursor-pointer hover:scale-105 transition-all  hover:text-green-700 hover:font-semibold my-[20px]  "
+              >
+                <Link
+                  href={el.path}
+                  onClick={() => {
+                    setToggle(false);
+                  }}
                 >
-                  <Link
-                    href={el.path}
-                    onClick={() => {
-                      setToggle(false);
-                    }}
-                  >
-                    {" "}
-                    {el.name}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        ) : null}
+                  {" "}
+                  {el.name}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );
