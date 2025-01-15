@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$background-color: #f8f9fa;
+$grey-500: #919eab;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $background-color;
+}
+
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.img,
+img {
+  object-fit: cover;
+}
+
+input,
+textarea {
+  background: $background-color;
+  &::placeholder {
+    color: $grey-500;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px $background-color inset !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input::-webkit-file-upload-button {
+  display: none !important;
+}
+
+input[type='file'] {
+  cursor: pointer;
+  color: $grey-500;
+  border-bottom: 2px solid black;
+  font-size: 1.25rem;
+}
